@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Next Horizon: Management & IT Innovation</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .animated-gradient {
+      background: linear-gradient(-45deg, #e0f2fe, #d1fae5, #fef3c7, #fee2e2);
+      background-size: 400% 400%;
+      animation: gradient-bg 15s ease infinite;
+    }
+    @keyframes gradient-bg {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Trial Notice -->
+  <div class="bg-amber-100 p-4 text-center text-sm text-amber-800">
+    Note: This is a trial website for a group project in the Digital Marketing course (BAITIA).
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white shadow-md p-4">
+    <h1 class="text-2xl font-bold text-center">Next Horizon</h1>
+    <p class="text-center text-sm text-slate-500">Management & IT Innovation</p>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="animated-gradient text-center py-20 text-white">
+    <h2 class="text-4xl font-extrabold">Next Horizon: Management & IT Innovation</h2>
+    <p class="mt-4 text-lg">A Master’s program at NCNU’s BAITIA — bridging management strategy with cutting-edge IT applications.</p>
+    <div class="mt-6 space-x-4">
+      <a href="https://baitia.ncnu.edu.tw/p/404-1084-24750.php?Lang=en" class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700">Apply Now</a>
+      <a href="#curriculum" class="px-6 py-3 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200">View Curriculum</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-100 text-center text-sm text-slate-500 py-6">
+    <p>National Chi Nan University, №1, Daxue Rd, Puli Township, Nantou County, 545</p>
+    <p>&copy; <span id="year"></span> Next Horizon Project Team. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
